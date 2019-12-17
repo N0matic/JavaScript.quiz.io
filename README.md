@@ -31,7 +31,7 @@ How do you deliver this? Here are some guidelines:
 
 * Refer to the animated GIF below for a demonstration of the application functionality.
 
-![code quiz](./)
+![code quiz](./Assets/04-Web-APIs-homework-demo.gif)
 
 
 ### Hints
