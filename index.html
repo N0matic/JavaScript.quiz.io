@@ -11,34 +11,78 @@
     <link rel="stylesheet" href="./Assets/style.css">
 
     <title>JavaScript Quiz</title>
-</head>
-<!-- Nav bar -->
-<nav>
-    <!-- Jump to Highscores area -->
-    <header>View Highscores</header>
-    <!-- Timer -->
-</nav>
 
 <body>
-    <div class="row">
-        <!-- Container for the quiz -->
-        <div class="container col-12 col-lg-8 mx-auto">
-            <!-- Quiz title -->
-            <h1>JavaScript Quiz</h1>
-            <!-- Div for the questions -->
-            <div class="quiz-container">
-                <div id="quiz"></div>
+    <!-- Page container -->
+    <div class="container">
+        <!-- Nav bar -->
+        <div class="row" id="ScoreTimer">
+            <div class="col-sm">
+                <button class="btn btn-primary" id="highScoreBtn">
+                    View High Scores
+                </button>
             </div>
-            <!-- button controls -->
-            <!-- Next Question button -->
-            <button id="next">Next Question</button>
-            <button id="submit">Submit Quiz</button>
-            <div id="results"></div>
+            <div class="col-sm text-right" id="boxTimer">
+                Timer:
+                <span id="timerCountdown">200</span> sec
+            </div>
+        </div>
 
+        <!-- Container for the quiz -->
+        <div class="row" id="content">
+
+            <div class="col-md-6" id="quizBox">
+                <div id="begin">
+                    <!-- Quiz title -->
+                    <h1>Javascript Quiz</h1>
+                    <hr>
+                    <p>There are 10 questions total, in random order. You get 200 seconds total to answer the quiz!
+                        In
+                        the end, you will have a score based on amount correct and time left. Input your
+                        initials to keep track of your high score!</p>
+                    <!-- Begin button -->
+                    <button id="begin">Begin Quiz</button>
+                </div>
+
+                <!-- Div for the questions -->
+                <div id="questions">
+                    <!-- Acutal question text goes here -->
+                    <h2 id="questionText"></h2>
+                    <br>
+                    <!-- possible answers go here -->
+                    <button type="button" class="btn answer" id="choice1"></button>
+                    <button type="button" class="btn answer" id="choice2"></button>
+                    <button type="button" class="btn answer" id="choice3"></button>
+                    <button type="button" class="btn answer" id="choice4"></button>
+                    <hr>
+                    <!-- feedback for choice goes here -->
+                    <div id="rightwrong">
+                    </div>
+                </div>
+
+                <!-- Div for results -->
+                <div id="Results">
+                    <h2 id="Score"></h2>
+                    <p>Please enter your initials: <input type="text" id="initials">
+                    </p>
+                    <!-- saves initials to High Score screen -->
+                    <button type="button" class="btn" id="HSinitials">Save</button>
+                </div>
+
+                <!-- High Score Screen -->
+                <div id="highScores">
+                    <h2>High Scores</h2>
+                    <ol id="highScoresList">
+
+                    </ol>
+                    <button id="clearScores">Clear High Scores</button>
+                </div>
+            </div>
 
         </div>
 
     </div>
+
     <!-- Scripts go here -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
