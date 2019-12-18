@@ -17,18 +17,15 @@ body{
     position: relative;
 }
 
-/* Start box style */
+/* Start Box style */
 #start{
-    /* font-size: 1.5em; */
     font-weight: bolder;
     width:400px;
-    /* height:300px; */
     border : 2px solid lightgrey;
     text-align: center;
     overflow-wrap: break-word;
     cursor: pointer;
     position: absolute;
-    /* left:300px; */
     top:50px;
     color : lightgrey;
 }
@@ -40,14 +37,7 @@ body{
     color : lightseagreen;
 }
 
-/* Style for Question box begins here */
-/* #question{
-    width:500px;
-    height : 125px;
-    position: absolute;
-    right:0;
-    top:0;
-} */
+/* Style for Question box here */
 #question p{
     margin : 0;
     padding : 15px;
@@ -55,14 +45,6 @@ body{
 }
 
 /* Choices are styled here */
-/* #choices{
-    width : 480px;
-    position: absolute;
-    right : 0;
-    top : 125px;
-    padding : 10px
-} */
-
 .choice{
     display: inline-block;
     width : 135px;
@@ -139,20 +121,8 @@ body{
     z-index: 2;
 }
 
-/* #scoreContainer img {
-    position: absolute;
-    top:100px;
-    left:325px;
-    align-content: center;
-    text-align: center;
-} */
-
-
 #scoreContainer p{
-    /* position: absolute; */
     display: block;
-    /* width : 59px;
-    height :59px; */
     top:130px;
     left:325px;
     font-size: 1.5em;
@@ -163,11 +133,9 @@ body{
 
 #saveInitials{
     width : 135px;
-    /* align-self: center; */
 }
 #resetGame{
     width : 135px;
-    /* align-self: center; */
 }
 
 

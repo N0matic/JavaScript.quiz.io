@@ -72,7 +72,7 @@ function renderQuestion() {
     choiceD.innerHTML = q.choiceD;
 }
 
-// Functions and elements to start quiz go here
+// Functions to start quiz go here
 start.addEventListener("click", startQuiz);
 
 function startQuiz() {
@@ -157,9 +157,13 @@ function scoreRender() {
     scoreDiv.innerHTML += "<p>" + finalScore + "</p>";
 }
 
-// Restart Game
+// Restart Game Button
 function restartGame() {
     window.location.reload();
 };
 
-// High Scores Screen Functions
+// Final Score to High Score Screen
+function highScores() {
+    scoreDiv.style.display = "none";
+    highScores.style.display = "block";
+}
