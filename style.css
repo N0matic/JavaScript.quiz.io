@@ -135,6 +135,7 @@ body{
     box-shadow: 0px 5px 15px 0px;
     position: relative;
     display: none;
+    font-size: 16px;
     z-index: 2;
 }
 
@@ -160,7 +161,10 @@ body{
     align-content: center;
 }
 
-
+#saveInitials{
+    width : 135px;
+    align-self: center;
+}
 
 
 
