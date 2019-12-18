@@ -2,7 +2,6 @@
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
 var question = document.getElementById("question");
-var qImg = document.getElementById("qImg");
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
 var choiceC = document.getElementById("C");
@@ -16,7 +15,6 @@ var scoreDiv = document.getElementById("scoreContainer");
 var questions = [
     {
         question: "What does HTML stand for?",
-        imgSrc: "img/html.png",
         choiceA: "Correct",
         choiceB: "Wrong",
         choiceC: "Wrong",
@@ -24,7 +22,6 @@ var questions = [
         correct: "A"
     }, {
         question: "What does CSS stand for?",
-        imgSrc: "img/css.png",
         choiceA: "Wrong",
         choiceB: "Correct",
         choiceC: "Wrong",
@@ -32,7 +29,6 @@ var questions = [
         correct: "B"
     }, {
         question: "What does JS stand for?",
-        imgSrc: "img/js.png",
         choiceA: "Wrong",
         choiceB: "Wrong",
         choiceC: "Correct",
@@ -56,7 +52,6 @@ function renderQuestion() {
     var q = questions[runningQuestion];
 
     question.innerHTML = "<p>" + q.question + "</p>";
-    qImg.innerHTML = "<img src=" + q.imgSrc + ">";
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
@@ -103,8 +98,8 @@ function renderCounter() {
     }
 }
 
-// Here is our function to check our Answers
 
+// Here is our function to check our Answers
 function checkAnswer(answer) {
     if (answer == questions[runningQuestion].correct) {
         // answer is correct
@@ -140,18 +135,11 @@ function answerIsWrong() {
 // Here is the funciton to render the score
 function scoreRender() {
     scoreDiv.style.display = "block";
+    quiz.style.display = "none";
 
     // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score / questions.length);
+    var scorePerCent = Math.round(100 * score / questions.length);
 
-    // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
-        (scorePerCent >= 60) ? "img/4.png" :
-            (scorePerCent >= 40) ? "img/3.png" :
-                (scorePerCent >= 20) ? "img/2.png" :
-                    "img/1.png";
-
-    scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
 }
 

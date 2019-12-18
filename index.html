@@ -12,34 +12,45 @@
 
 <body>
     <!-- Page container -->
-    <div id="container">
-        <!-- Start Quiz Div -->
-        <div id="start">Start Quiz!</div>
-        <!-- Actual Quiz Container -->
-        <div id="quiz" style="display: none">
-            <!-- Question Text -->
-            <div id="question"></div>
-            <div id="qImg"></div>
-            <!-- Question Choices -->
-            <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
-            </div>
-            <!-- Timer Goes here -->
-            <div id="timer">
-                <div id="counter"></div>
-                <div id="btimeGauge"></div>
-                <div id="timeGauge"></div>
-            </div>
-            <!-- Progress Bar goes here -->
-            <div id="progress"></div>
-        </div>
-        <!-- Final score is here -->
-        <div id="scoreContainer" style="display: none"></div>
-    </div>
+    <div class="row">
+        <!-- Content container -->
+        <div id="container" class="col-7 d-flex justify-content-center">
 
+            <!-- Start Quiz Div -->
+            <div id="start" class="col-10">Start Quiz!
+                <p>There are 5 total questions to answer. You have 10 seconds per
+                    question, and you will lose points based
+                    on how long you take. There are four possible answers for each question.</p>
+            </div>
+
+            <!-- Actual Quiz Container -->
+            <div id="quiz" style="display: none" class="col-10">
+                <br>
+                <!-- Question Text -->
+                <div id="question" class="row"></div>
+                <!-- Question Choices -->
+                <br>
+                <div id="choices" class="col-10">
+                    <div class="choice btn-secondary" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="choice btn-secondary" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="choice btn-secondary" id="C" onclick="checkAnswer('C')"></div>
+                    <div class="choice btn-secondary" id="D" onclick="checkAnswer('D')"></div>
+                </div>
+                <!-- Timer Goes here -->
+                <div id="timer">
+                    <div id="counter"></div>
+                    <div id="btimeGauge"></div>
+                    <div id="timeGauge"></div>
+                </div>
+                <!-- Progress Bar goes here -->
+                <div id="progress"></div>
+            </div>
+
+            <!-- Final score is here -->
+            <div id="scoreContainer" style="display: none"></div>
+        </div>
+
+    </div>
     <!-- Scripts go here -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
