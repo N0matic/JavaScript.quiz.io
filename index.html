@@ -14,7 +14,7 @@
     <!-- Page container -->
     <div class="row">
         <!-- Content container -->
-        <div id="container" class="col-7 d-flex justify-content-center">
+        <div id="container" class="col-md-7 col-12 d-flex justify-content-center">
 
             <!-- Start Quiz Div -->
             <div id="start" class="col-10">Start Quiz!
@@ -36,18 +36,20 @@
                     <div class="choice btn-secondary" id="C" onclick="checkAnswer('C')"></div>
                     <div class="choice btn-secondary" id="D" onclick="checkAnswer('D')"></div>
                 </div>
-                <!-- Timer Goes here -->
-                <div id="timer">
-                    <div id="counter"></div>
-                    <div id="btimeGauge"></div>
-                    <div id="timeGauge"></div>
+                <div class="row">
+                    <!-- Timer Goes here -->
+                    <div id="timer">
+                        <div id="counter"></div>
+                        <div id="btimeGauge"></div>
+                        <div id="timeGauge"></div>
+                    </div>
+                    <!-- Progress Bar goes here -->
+                    <div id="progress"></div>
                 </div>
-                <!-- Progress Bar goes here -->
-                <div id="progress"></div>
             </div>
 
             <!-- Final score is here -->
-            <div id="scoreContainer" style="display: none" class="col-10 text-center"></div>
+            <div id="scoreContainer" style="display: none" class="col-10"></div>
         </div>
 
     </div>

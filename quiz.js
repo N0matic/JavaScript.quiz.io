@@ -34,6 +34,20 @@ var questions = [
         choiceC: "Correct",
         choiceD: "Wrong",
         correct: "C"
+    }, {
+        question: "What does JS stand for?",
+        choiceA: "Wrong",
+        choiceB: "Wrong",
+        choiceC: "Correct",
+        choiceD: "Wrong",
+        correct: "C"
+    }, {
+        question: "What does JS stand for?",
+        choiceA: "Wrong",
+        choiceB: "Wrong",
+        choiceC: "Correct",
+        choiceD: "Wrong",
+        correct: "C"
     }
 ];
 
