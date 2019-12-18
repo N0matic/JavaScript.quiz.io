@@ -1,12 +1,14 @@
 # JavaScript.quiz.io
-# Unit 04 Web APIs
 
-# Assignment:
+## Link:
+https://n0matic.github.io/JavaScript.quiz.io/
+
+### Assignment:
 
 As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive challenges. In this homework assignment, your challenge is to build a code quiz with multiple-choice questions.
 
 
-## Function:
+#### Function:
 
 * Play proceeds as follows:
 
@@ -18,4 +20,6 @@ As you proceed in your career as a web developer, you will probably be asked to 
 
   * After answering the questions, the user is presented with a High Score screen and prompted to enter their intials.
 
-## Submission on BCS
+##### Functional Screenshot
+
+![Screenshot](assets/images/Screen_Shot.png)
