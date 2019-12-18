@@ -3,84 +3,41 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
     <!-- Style sheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Assets/style.css">
-
-    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
 <body>
     <!-- Page container -->
-    <div class="container">
-        <!-- Nav bar -->
-        <div class="row" id="ScoreTimer">
-            <div class="col-sm">
-                <button class="btn btn-primary" id="highScoreBtn">
-                    View High Scores
-                </button>
+    <div id="container">
+        <!-- Start Quiz Div -->
+        <div id="start">Start Quiz!</div>
+        <!-- Actual Quiz Container -->
+        <div id="quiz" style="display: none">
+            <!-- Question Text -->
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <!-- Question Choices -->
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
             </div>
-            <div class="col-sm text-right" id="boxTimer">
-                Timer:
-                <span id="timerCountdown">200</span> sec
+            <!-- Timer Goes here -->
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
             </div>
+            <!-- Progress Bar goes here -->
+            <div id="progress"></div>
         </div>
-
-        <!-- Container for the quiz -->
-        <div class="row" id="content">
-
-            <div class="col-md-6" id="quizBox">
-                <div id="begin">
-                    <!-- Quiz title -->
-                    <h1>Javascript Quiz</h1>
-                    <hr>
-                    <p>There are 10 questions total, in random order. You get 200 seconds total to answer the quiz!
-                        In
-                        the end, you will have a score based on amount correct and time left. Input your
-                        initials to keep track of your high score!</p>
-                    <!-- Begin button -->
-                    <button id="begin">Begin Quiz</button>
-                </div>
-
-                <!-- Div for the questions -->
-                <div id="questions">
-                    <!-- Acutal question text goes here -->
-                    <h2 id="questionText"></h2>
-                    <br>
-                    <!-- possible answers go here -->
-                    <button type="button" class="btn answer" id="A"></button>
-                    <button type="button" class="btn answer" id="B"></button>
-                    <button type="button" class="btn answer" id="C"></button>
-                    <button type="button" class="btn answer" id="D"></button>
-                    <hr>
-                    <!-- feedback for choice goes here -->
-                    <div id="rightwrong">
-                    </div>
-                </div>
-
-                <!-- Div for results -->
-                <div id="Results">
-                    <h2 id="Score"></h2>
-                    <p>Please enter your initials: <input type="text" id="initials">
-                    </p>
-                    <!-- saves initials to High Score screen -->
-                    <button type="button" class="btn" id="HSinitials">Save</button>
-                </div>
-
-                <!-- High Score Screen -->
-                <div id="highScores">
-                    <h2>High Scores</h2>
-                    <ol id="highScoresList">
-
-                    </ol>
-                    <button id="clearScores">Clear High Scores</button>
-                </div>
-            </div>
-
-        </div>
-
+        <!-- Final score is here -->
+        <div id="scoreContainer" style="display: none"></div>
     </div>
 
     <!-- Scripts go here -->
@@ -93,7 +50,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="./Assets/scripts.js"></script>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
