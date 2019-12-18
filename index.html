@@ -64,17 +64,21 @@
                 </div>
             </div>
 
-            <!-- High Score Screen -->
+            <!-- High Scores go Here -->
             <div id="highScores" style="display: none" class="col-10">
                 <form>
                     <h4>Hall of fame</h4>
                     <ul id="hallOfFame">
-                        <li id="0">Bob</li>
+                        <li id="0">Z</li>
                     </ul>
-                    <input placeholder="name" id="name" />
-                    <button id="add-btn">Add Person</button>
+                    <div class="row d-flex justify-content-center">
+                        <button type="button" class="choice btn-secondary btn-block" id="resetBtn">Reset Scores</button>
+                        <button type="button" class="choice btn-secondary btn-block" id="restartGame"
+                            onclick="restartGame()">Try
+                            Again?</button>
+                    </div>
                 </form>
-                <!-- High Scores and Initials go Here -->
+
             </div>
 
 

@@ -14,40 +14,40 @@ var scoreDiv = document.getElementById("scoreContainer");
 // Questions are stored in arrays here
 var questions = [
     {
-        question: "What does HTML stand for?",
-        choiceA: "Correct",
-        choiceB: "Wrong",
-        choiceC: "Wrong",
-        choiceD: "Wrong",
-        correct: "A"
+        question: "Ecuador Was named after:",
+        choiceA: "Equality",
+        choiceB: "Equestrians",
+        choiceC: "The Equator",
+        choiceD: "Equal Sign",
+        correct: "C"
     }, {
-        question: "What does CSS stand for?",
-        choiceA: "Wrong",
-        choiceB: "Correct",
-        choiceC: "Wrong",
-        choiceD: "Wrong",
+        question: "Which of these is NOT one of Ecuadors four main regions:",
+        choiceA: "The Amazonian Jungle",
+        choiceB: "The Campos Desert",
+        choiceC: "The Andes Mountains",
+        choiceD: "The Galpagos Islands",
         correct: "B"
     }, {
-        question: "What does JS stand for?",
-        choiceA: "Wrong",
-        choiceB: "Wrong",
-        choiceC: "Correct",
-        choiceD: "Wrong",
-        correct: "C"
+        question: "The Currency of Ecuador is:",
+        choiceA: "The American Dollar",
+        choiceB: "The Equadorian Dollar",
+        choiceC: "The Equadorian Real",
+        choiceD: "The Equadorian Peso",
+        correct: "A"
     }, {
-        question: "What does JS stand for?",
-        choiceA: "Wrong",
-        choiceB: "Wrong",
-        choiceC: "Correct",
-        choiceD: "Wrong",
-        correct: "C"
+        question: "Ecuador shares a border with this Latin American Country:",
+        choiceA: "Peru",
+        choiceB: "Venezuela",
+        choiceC: "Panama",
+        choiceD: "Bolivia",
+        correct: "A"
     }, {
-        question: "What does JS stand for?",
-        choiceA: "Wrong",
-        choiceB: "Wrong",
-        choiceC: "Correct",
-        choiceD: "Wrong",
-        correct: "C"
+        question: "'Cuy', a local delicacy, is made from cooked:",
+        choiceA: "Alligator",
+        choiceB: "Anaconda",
+        choiceC: "Mountain Goat",
+        choiceD: "Guinea Pig",
+        correct: "D"
     }
 ];
 

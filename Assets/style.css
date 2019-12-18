@@ -5,6 +5,7 @@ body{
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     background-color: cadetblue;
+    background-image: url(../Assets/images/PixelWaterfall.jpg);
 }
 
 #container{
@@ -47,7 +48,9 @@ body{
 /* Choices are styled here */
 .choice{
     display: inline-block;
-    width : 135px;
+    font-size: 16px;
+    width : 150px;
+    height: 60px;
     text-align: center;
     border : 1px solid grey;
     border-radius: 5px;
