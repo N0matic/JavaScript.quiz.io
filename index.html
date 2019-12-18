@@ -7,7 +7,7 @@
     <!-- Style sheets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../JavaScript.quiz.io/Assets/style.css">
 </head>
 
 <body>
@@ -48,12 +48,19 @@
                 </div>
             </div>
 
-            <!-- Final score only shows up on completion -->
+            <!-- Final score -->
             <div id="scoreContainer" style="display: none" class="col-10">
                 <h4 id="endingScore"></h4>
-                <p>Please enter your initials: <input type="text" id="initials" maxlength="2">
+                <div class="row">
+                    <p>Please enter your initials: <input type="text" id="initials">
+                </div>
                 </p>
-                <button type="button" class="btn btn-secondary btn-block" id="saveInitials">Save</button>
+                <div class="row d-flex justify-content-center">
+                    <button type="button" class="choice btn-secondary btn-block" id="saveInitials">Save Score</button>
+                    <button type="button" class="choice btn-secondary btn-block" id="restartGame"
+                        onclick="restartGame()">Try
+                        Again?</button>
+                </div>
             </div>
 
         </div>
@@ -71,7 +78,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <script src="quiz.js"></script>
+    <script src="../JavaScript.quiz.io/Assets/scripts.js"></script>
 </body>
 
 </html>

@@ -163,7 +163,11 @@ body{
 
 #saveInitials{
     width : 135px;
-    align-self: center;
+    /* align-self: center; */
+}
+#resetGame{
+    width : 135px;
+    /* align-self: center; */
 }
 
 

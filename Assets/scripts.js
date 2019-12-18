@@ -113,7 +113,7 @@ function renderCounter() {
 }
 
 
-// Here is our function to check our Answers
+// Here is the function to check the Answers
 function checkAnswer(answer) {
     if (answer == questions[runningQuestion].correct) {
         // answer is correct
@@ -151,10 +151,15 @@ function scoreRender() {
     scoreDiv.style.display = "block";
     quiz.style.display = "none";
 
-    // calculate the amount of question percent answered by the user
-    var scorePerCent = Math.round(100 * score / questions.length);
+    // calculate the final score
+    var finalScore = score;
 
-    scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
+    scoreDiv.innerHTML += "<p>" + finalScore + "</p>";
 }
+
+// Restart Game
+function restartGame() {
+    window.location.reload();
+};
 
 // High Scores Screen Functions
