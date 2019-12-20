@@ -22,4 +22,4 @@ As you proceed in your career as a web developer, you will probably be asked to 
 
 ##### Functional Screenshot
 
-![Screenshot](assets/images/Screen_Shot.png)
+![Screenshot](Assets/images/Screen_Shot.png)
