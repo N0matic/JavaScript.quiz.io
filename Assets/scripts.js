@@ -165,5 +165,34 @@ function restartGame() {
 // Final Score to High Score Screen
 function highScores() {
     scoreDiv.style.display = "none";
-    highScores.style.display = "block";
+    document.getElementById("highScores").style.display = "block";
+    console.log(document.getElementById("highScores"))
+    var currentHighScores = JSON.parse(localStorage.getItem("highScore"));
+    // var highScoreArray = []
+    var highScore = {
+        name: document.getElementById("initials").value,
+        score: score
+    }
+    currentHighScores.push(highScore)
+    var strHighScore = JSON.stringify(currentHighScores);
+    localStorage.setItem("highScore", strHighScore);
+    console.log(highScore)
+    displayHallOfFame()
+}
+
+
+// Add to Hall of Fame
+function displayHallOfFame() {
+    var currentHighScores = JSON.parse(localStorage.getItem("highScore"));
+    for (let i = 0; i < currentHighScores.length; i++) {
+        console.log(currentHighScores[i])
+        var li = "<li>" + currentHighScores[i].name + ":" + currentHighScores[i].score + "</li>"
+        var nameList = document.getElementById("hallOfFame")
+        nameList.innerHTML = nameList.innerHTML + li
+    }
+}
+
+function resetScore() {
+    localStorage.setItem("highScore", "[]");
+    restartGame()
 }

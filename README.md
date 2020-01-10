@@ -23,3 +23,4 @@ As you proceed in your career as a web developer, you will probably be asked to 
 ##### Functional Screenshot
 
 ![Screenshot](Assets/images/Screen_Shot.png)
+<img src="Assets/images/Screen_Shot.png" width="200">
